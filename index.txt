@@ -7,7 +7,7 @@
   <title>Bodymovin Demo</title>
   
   <!--  Styles  -->
-  <link rel="stylesheet" href="styles/index.wrapping.css">
+  <link rel="stylesheet" type="text/css" href="wrapping.css">
 </head>
 <body>
   
