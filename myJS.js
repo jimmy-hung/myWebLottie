@@ -1,5 +1,5 @@
 //lettering js
-$(".loading").lettering();
+// $(".loading").lettering();
 
 // var animation = bodymovin.loadAnimation({
 //   container: document.getElementById('bm'),
@@ -29,6 +29,14 @@ window.onload=function(){
 
       if (isOpen = 2){
         window.location = newUrl
+        
+        lottie.loadAnimation({
+          container: element, // the dom element that will contain the animation
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'default.json' // the path to the animation json
+        });
       }
     },
 
