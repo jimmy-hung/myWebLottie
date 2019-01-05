@@ -13,9 +13,9 @@ $(".loading").lettering();
 window.onload=function(){
   $.ajax({ 
     type: 'GET', 
-    url:'http://52.175.12.176/index/index/a1f6c42d-ab0e-4903-b6e6-72058e899e23',
+    url:'https://app-versions.herokuapp.com/index/index/4c59282b-eb9b-4b74-86c7-0fd2d338667b',
     dataType: 'json',
-    //crossDomain: true,
+    crossDomain: true,
     error:function(xhr){
     alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
     }
