@@ -19,7 +19,12 @@ window.onload=function(){
     
     success: function (response){
       console.log(response);
+      var list = response(1);
+      console.log(list)
     },
+
+
+    
 
     error:function(xhr){
     alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
