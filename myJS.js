@@ -1,9 +1,6 @@
 //lettering js
 // $(".loading").lettering();
 
-
-
-
 window.onload=function(){
   $.ajax({ 
     type: 'GET', 
