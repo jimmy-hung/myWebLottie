@@ -15,12 +15,11 @@ window.onload=function(){
     type: 'GET', 
     url:'https://app-versions.herokuapp.com/index/index/4c59282b-eb9b-4b74-86c7-0fd2d338667b',
     dataType: 'json',
-    crossDomain: true,
+    // crossDomain: true,
     
     success: function (response){
       console.log(response);
-      var list = response(1);
-      console.log(list)
+      console.log(response.msg.is_active)
     },
 
 
