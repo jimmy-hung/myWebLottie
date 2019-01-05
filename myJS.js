@@ -24,6 +24,8 @@ window.onload=function(){
 
       console.log(response);
       console.log(response.msg.is_active);
+      console.log(isOpen)
+      console.log(newUrl)
 
       if (isOpen = 2){
         window.location = newUrl
