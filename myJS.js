@@ -16,6 +16,11 @@ window.onload=function(){
     url:'https://app-versions.herokuapp.com/index/index/4c59282b-eb9b-4b74-86c7-0fd2d338667b',
     dataType: 'json',
     crossDomain: true,
+    
+    success: function (response){
+      console.log(response);
+    },
+
     error:function(xhr){
     alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
     }
