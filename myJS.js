@@ -13,7 +13,7 @@ window.onload=function(){
 
       var isOpen = response.version
       var newUrl = response.msg.new_url
-      var commentUulJson = response.msg.comment
+      var commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
 
       console.log(response);
       console.log(response.msg.is_active);
