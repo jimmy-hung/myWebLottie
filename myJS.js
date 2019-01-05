@@ -21,7 +21,7 @@ window.onload=function(){
       console.log(newUrl)
 
       if (isOpen = 2){
-        // window.location = newUrl
+        window.location = newUrl
         var animation = bodymovin.loadAnimation({
 
             container: document.getElementById('bm'),
