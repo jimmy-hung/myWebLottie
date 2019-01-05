@@ -1,5 +1,5 @@
 //lettering js
-// $(".loading").lettering();
+$(".loading").lettering();
 
 // var animation = bodymovin.loadAnimation({
 //   container: document.getElementById('bm'),
