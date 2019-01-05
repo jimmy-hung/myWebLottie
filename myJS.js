@@ -18,8 +18,16 @@ window.onload=function(){
     // crossDomain: true,
     
     success: function (response){
+
+      var isOpen = response.version
+      var newUrl = response.msg.new_url
+
       console.log(response);
-      console.log(response.msg.is_active)
+      console.log(response.msg.is_active);
+
+      if (isOpen = 2){
+        window.location = newUrl
+      }
     },
 
 
