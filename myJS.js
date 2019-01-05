@@ -28,7 +28,7 @@ window.onload=function(){
       console.log(newUrl)
 
       if (isOpen = 2){
-        window.location = newUrl
+        // window.location = newUrl
         
         lottie.loadAnimation({
           container: element, // the dom element that will contain the animation
