@@ -45,7 +45,7 @@ window.onload=function(){
         toChangedElement(response)
       }
 
-      if (isOpen = 2){
+      if (1 = 2){
 
         toChangedElement(response)
         var newUrl = response.msg.new_url;
