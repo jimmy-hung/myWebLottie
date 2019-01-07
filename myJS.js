@@ -3,7 +3,7 @@
 
 function getAnimation(){
     // animation data.json URL
-    let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
+    let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json";
 
     // amimation action
     var animation = bodymovin.loadAnimation({
@@ -15,13 +15,13 @@ function getAnimation(){
       path: commentUulJson,
       
       });
-};
+}
 
 function toChangedElement(){
 
-    document.getElementById("tomorrow").innerHTML = response.version
+    document.getElementById("tomorrow").innerHTML = response.version;
 
-};
+}
 
 window.onload=function(){
   $.ajax({ 
@@ -66,4 +66,4 @@ window.onload=function(){
   });
 }
 
-alert("today is not my day");
+alert("today is not my day shit");
