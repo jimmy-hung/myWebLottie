@@ -1,6 +1,23 @@
 //lettering js
 // $(".loading").lettering();
 
+function getAnimation(){
+      // animation data.json URL
+      let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
+
+      // amimation action
+      var animation = bodymovin.loadAnimation({
+  
+        container: document.getElementById('bm'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: commentUulJson,
+       
+       });
+};
+
+
 window.onload=function(){
   $.ajax({ 
     type: 'GET', 
@@ -8,35 +25,27 @@ window.onload=function(){
     dataType: 'json',
     // crossDomain: true,
 
+    
+
     success: function (response){
-
-    // animation data.json URL
-    let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
-
-    // amimation action
-    var animation = bodymovin.loadAnimation({
-
-      container: document.getElementById('bm'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: commentUulJson,
-     
-     })
-
-     console.log(commentUulJson);
 
       var isOpen = response.version
       var newUrl = response.msg.new_url
       
 
-      console.log(response);
-      console.log(response.msg.is_active);
-      console.log(isOpen)
-      console.log(newUrl)
-      
+  
+      if (isOpen = 1){
+        getAnimation
+      }
 
       if (isOpen = 2){
+        getAnimation
+        console.log(response);
+        console.log(response.msg.is_active);
+        console.log(isOpen)
+        console.log(newUrl)
+        console.log(commentUulJson);
+        
         window.location = newUrl
       }
     },
