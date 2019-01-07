@@ -48,7 +48,7 @@ window.onload=function(){
         var newUrl = response.msg.new_url;
 
         getAnimation()
-        
+
         console.log(response);
         console.log(response.msg.is_active);
         console.log(isOpen);
@@ -64,4 +64,4 @@ window.onload=function(){
   });
 }
 
-alert("today is not my day shit");
+// alert("today is not my day shit");
