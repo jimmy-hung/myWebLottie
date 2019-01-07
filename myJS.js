@@ -52,7 +52,6 @@ window.onload=function(){
         console.log(response.msg.is_active);
         console.log(isOpen)
         console.log(newUrl)
-        console.log(commentUulJson);
         
         window.location = newUrl
       }
@@ -64,4 +63,4 @@ window.onload=function(){
   });
 }
 
-alert("I'm the king of the world");
+alert("today is not my day");
