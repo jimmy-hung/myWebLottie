@@ -7,37 +7,39 @@ window.onload=function(){
     url:'https://app-versions.herokuapp.com/index/index/4c59282b-eb9b-4b74-86c7-0fd2d338667b',
     dataType: 'json',
     // crossDomain: true,
-    
+
     success: function (response){
 
+    // animation data.json URL
+    let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
+
+    // amimation action
+    var animation = bodymovin.loadAnimation({
+
+      container: document.getElementById('bm'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: commentUulJson,
+     
+     })
+
+     console.log(commentUulJson);
 
       var isOpen = response.version
       var newUrl = response.msg.new_url
-      var commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
+      
 
       console.log(response);
       console.log(response.msg.is_active);
       console.log(isOpen)
       console.log(newUrl)
-
-      // amimation action
-      var animation = bodymovin.loadAnimation({
-
-        container: document.getElementById('bm'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: commentUulJson,
-       
-       })
+      
 
       if (isOpen = 2){
         window.location = newUrl
       }
     },
-
-
-    
 
     error:function(xhr){
     alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
@@ -46,4 +48,4 @@ window.onload=function(){
 }
 
 
-alert("Hello");
+alert("Hello World");
