@@ -34,26 +34,29 @@ window.onload=function(){
 
     success: function (response){
 
-      var isOpen = response.version
+      var isOpen = response.version;
+
+      console.log(response);
+      console.log(isOpen);
 
       if (isOpen = 1){
-        getAnimation
+        getAnimation()
 
-        toChangedElement
+        toChangedElement()
       }
 
       if (isOpen = 2){
 
-        toChangedElement
-        var newUrl = response.msg.new_url
+        toChangedElement()
+        var newUrl = response.msg.new_url;
 
-        getAnimation
+        getAnimation()
         console.log(response);
         console.log(response.msg.is_active);
-        console.log(isOpen)
-        console.log(newUrl)
+        console.log(isOpen);
+        console.log(newUrl);
         
-        window.location = newUrl
+        window.location = newUrl;
       }
     },
 
