@@ -19,7 +19,7 @@ function getAnimation(){
 
 function toChangedElement(){
 
-    document.getElementById("tomorrow") = response.version
+    document.getElementById("tomorrow").innerHTML = response.version
 
 };
 
@@ -44,7 +44,7 @@ window.onload=function(){
 
       if (isOpen = 2){
 
-        toChangedElement
+        toChangedElementg
         var newUrl = response.msg.new_url
 
         getAnimation
