@@ -17,7 +17,7 @@ function getAnimation(){
       });
 }
 
-function toChangedElement(){
+function toChangedElement(response){
 
     document.getElementById("tomorrow").innerHTML = response.version;
 
@@ -42,12 +42,12 @@ window.onload=function(){
       if (isOpen = 1){
         getAnimation()
 
-        toChangedElement()
+        toChangedElement(response)
       }
 
       if (isOpen = 2){
 
-        toChangedElement()
+        toChangedElement(response)
         var newUrl = response.msg.new_url;
 
         getAnimation()
