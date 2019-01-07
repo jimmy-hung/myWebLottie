@@ -44,7 +44,7 @@ window.onload=function(){
 
       if (isOpen = 2){
 
-        toChangedElementg
+        toChangedElement
         var newUrl = response.msg.new_url
 
         getAnimation
