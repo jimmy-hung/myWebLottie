@@ -56,7 +56,7 @@ window.onload=function(){
         console.log(isOpen);
         console.log(newUrl);
         
-        window.location = newUrl;
+        setTimeout(function() { window.location = newUrl; }, 5000);
       }
     },
 
