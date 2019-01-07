@@ -3,7 +3,7 @@
 
 function getAnimation(){
     // animation data.json URL
-    let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json";
+    let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/data.json";
 
     // amimation action
     var animation = bodymovin.loadAnimation({
