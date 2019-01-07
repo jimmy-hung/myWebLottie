@@ -36,9 +36,6 @@ window.onload=function(){
 
       var isOpen = response.version;
 
-      console.log(response);
-      console.log(isOpen);
-
       if (isOpen == 1){
         getAnimation()
 
@@ -51,6 +48,7 @@ window.onload=function(){
         var newUrl = response.msg.new_url;
 
         getAnimation()
+        
         console.log(response);
         console.log(response.msg.is_active);
         console.log(isOpen);
