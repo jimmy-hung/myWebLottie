@@ -39,13 +39,13 @@ window.onload=function(){
       console.log(response);
       console.log(isOpen);
 
-      if (isOpen = 1){
+      if (isOpen == 1){
         getAnimation()
 
         toChangedElement(response)
       }
 
-      if (1 = 2){
+      if (isOpen == 2){
 
         toChangedElement(response)
         var newUrl = response.msg.new_url;
