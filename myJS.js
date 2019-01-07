@@ -64,4 +64,4 @@ window.onload=function(){
   });
 }
 
- alert("today is not my day shit");
+ alert("today is not my day shit LOL");
