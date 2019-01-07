@@ -6,7 +6,7 @@ window.onload=function(){
     type: 'GET', 
     url:'https://app-versions.herokuapp.com/index/index/4c59282b-eb9b-4b74-86c7-0fd2d338667b',
     dataType: 'json',
-    crossDomain: true,
+    // crossDomain: true,
     
     success: function (response){
 
@@ -20,18 +20,19 @@ window.onload=function(){
       console.log(isOpen)
       console.log(newUrl)
 
+      // amimation action
+      var animation = bodymovin.loadAnimation({
+
+        container: document.getElementById('bm'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: commentUulJson,
+       
+       })
+
       if (isOpen = 2){
         window.location = newUrl
-        var animation = bodymovin.loadAnimation({
-
-            container: document.getElementById('bm'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: commentUulJson,
-           
-           })
-        
       }
     },
 
