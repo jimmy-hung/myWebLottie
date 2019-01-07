@@ -2,21 +2,26 @@
 // $(".loading").lettering();
 
 function getAnimation(){
-      // animation data.json URL
-      let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
+    // animation data.json URL
+    let commentUulJson = "https://jimmy-hung.github.io/myWebLottie/another.json"
 
-      // amimation action
-      var animation = bodymovin.loadAnimation({
-  
-        container: document.getElementById('bm'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: commentUulJson,
-       
-       });
+    // amimation action
+    var animation = bodymovin.loadAnimation({
+
+      container: document.getElementById('bm'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: commentUulJson,
+      
+      });
 };
 
+function toChangedElement(){
+
+    document.getElementById("tomorrow") = response.version
+
+};
 
 window.onload=function(){
   $.ajax({ 
@@ -30,15 +35,18 @@ window.onload=function(){
     success: function (response){
 
       var isOpen = response.version
-      var newUrl = response.msg.new_url
-      
 
-  
       if (isOpen = 1){
         getAnimation
+
+        toChangedElement
       }
 
       if (isOpen = 2){
+
+        toChangedElement
+        var newUrl = response.msg.new_url
+
         getAnimation
         console.log(response);
         console.log(response.msg.is_active);
@@ -56,5 +64,4 @@ window.onload=function(){
   });
 }
 
-
-alert("Hello World");
+alert("I'm the king of the world");
