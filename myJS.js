@@ -64,4 +64,4 @@ window.onload=function(){
   });
 }
 
- alert("QOO 真好喝");
+ alert("30678");
