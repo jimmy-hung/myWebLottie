@@ -1,14 +1,16 @@
 html, body {
   height: 100%;
+  margin: 0px auto
 }
 
 body {
   background: -webkit-radial-gradient(center center, circle cover, #078ABE, #0D343A);
   background: -moz-radial-gradient(center center, circle cover, #078ABE, #0D343A);
   background: radial-gradient(circle cover at center center, #078abe, #0d343a);
+  margin: 0px auto
 }
 
-.loading {
+/* .loading {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -105,4 +107,4 @@ body {
   100% {
     opacity: 1;
   }
-}
+} */
