@@ -1,13 +1,16 @@
 html, body {
   height: 100%;
-  margin: 0px auto
 }
 
 body {
   background: -webkit-radial-gradient(center center, circle cover, #078ABE, #0D343A);
   background: -moz-radial-gradient(center center, circle cover, #078ABE, #0D343A);
   background: radial-gradient(circle cover at center center, #078abe, #0d343a);
-  margin: 0px auto
+  
+}
+
+#bm{
+  margin-top: 45%;
 }
 
 /* .loading {

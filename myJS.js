@@ -64,4 +64,4 @@ window.onload=function(){
   });
 }
 
- alert("66666");
+//  alert("66666");
